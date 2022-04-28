@@ -16,10 +16,10 @@ public class string_paliendrome {
         // r a d a r
         //------------
         
-        int h = c.length - 1, i = 0; // 4
+        int h = c.length - 1, i = 0; // h = 4
 
-        while(h >= i){
-            if(c[i++] == c[h--]){
+        while(h >= i){ // 4 >= 0
+            if(c[i++] == c[h--]){ // 1 == 3
                 System.out.println("Yes");
                 break;
             }
@@ -28,5 +28,32 @@ public class string_paliendrome {
                 break;
             }
         }
+        
+        /*
+
+        Second Aproach:
+        
+        //------------
+        // 0 1 2 3 4
+        // r a d a r
+        //------------
+
+        boolean palindrome = true;
+
+        for(int i = 0; i<A.length()/2;i++)  // 0 < 2
+        {
+        //                  (0,1)                    (5-1-1,5-0)                              
+            if(!A.substring(i,i+1).equals(A.substring(A.length()-i-1,A.length()-i)))
+            {
+                palindrome = false;
+            }
+        }
+        if(palindrome) {
+            System.out.println("Yes");
+        } else {
+            System.out.println("No");
+        }
+        
+        */
     }
 }
