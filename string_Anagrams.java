@@ -28,25 +28,13 @@ public class string_Anagrams {
         char[] str1 = a.toCharArray();
         char[] str2 = a.toCharArray();
 
-        // int letters[] = new int[26];
-
-        // for(char x : str1)
-        //     letters[x - 'a']++;
-        
-        // for(int i = 0; i < MAX_CHAR; i++)
-        //     for(int j = 0; j < letters[i]; j++)
-                
-
-        // Arrays.sort(str1);
-        // Arrays.sort(str2);
-
         for(int i = 0; i < n1; i++)
             if(str1[i] == str2[i])
                 return true;
 
         return true;
 
-        
+
     }
 
     public static void main(String[] args) {
