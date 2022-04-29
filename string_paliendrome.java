@@ -2,6 +2,10 @@ import java.util.*;
 
 /**
  * string_palindrome
+ * 
+ *  Ref: https://www.programiz.com/c-programming/examples/palindrome-number
+ *       https://www.geeksforgeeks.org/c-program-check-given-string-palindrome/ 
+ * 
  */
 
 public class string_paliendrome {
